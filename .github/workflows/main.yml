@@ -1,0 +1,9 @@
+name: booklet
+run-name: ${{ github.actor }} initializing booklet 
+on: 
+  workflow_dispatch:
+  push:
+    branches: [booklet]
+  pull_request_target:
+    types: [closed]
+    branches: [booklet]
